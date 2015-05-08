@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.css" />
+    <Content Include="app\appConfig.js" />
     <Content Include="app\appModule.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
