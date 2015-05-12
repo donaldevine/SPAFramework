@@ -4,7 +4,13 @@ angular.module('psMenu')
     .controller('psMenuController',
     ['$scope', '$rootScope',
         function ($scope, $rootScope) {
-            this.setActiveElement = function(el) {
+
+            this.getActiveElement = function () {
+                return $scope.activeElement;
+            };
+
+
+            this.setActiveElement = function (el) {
                 $scope.activeElement = el;
             };
 
@@ -12,5 +18,6 @@ angular.module('psMenu')
                 $rootScope.$broadcast('ps-menu-item-selected-event',
                 { route: route });
             };
+
         }
     ]);
