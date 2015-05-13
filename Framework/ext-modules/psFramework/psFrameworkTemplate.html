@@ -1,7 +1,7 @@
 ﻿<div class="ps-title-bar">
     <div class="row">
         <div class="ps-logo-area col-sm-6">
-            <img class="ps-icon" ng-src="{{ iconFile }}" />
+            <img class="ps-icon" ng-src="{{ iconFile }}"/>
             <div class="ps-title-area">
                 <p class="ps-logo-title">{{ title }}</p>
                 <p class="ps-logo-subtitle">{{ subtitle }}</p>
@@ -25,8 +25,9 @@
         </div>
     </div>
 </div>
-<div ng-transclude></div>
 
-<div style="position:absolute; left:200px; top: 200px; color: red; font-size: 44px;">
-    {{ routeString }}
+<ng-transclude></ng-transclude>
+
+<div ng-view class="ps-view" 
+     ng-class="{'ps-view-full-width': !isMenuVertical || !isMenuVisible}">
 </div>
