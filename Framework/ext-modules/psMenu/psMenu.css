@@ -1,4 +1,5 @@
-﻿.ps-menu-area {
+﻿
+.ps-menu-area {
     position: relative;
     background-color: #333;
     color: #ccc;
@@ -52,7 +53,7 @@
 }
 
 .ps-menu-icon {
-    margin-right: 10px;    
+    margin-right: 10px;
 }
 
 .ps-menu-active-indicator {
@@ -95,12 +96,11 @@
     right: 10px;
 }
 
-
 .ps-item-horizontal {
     display: inline-block;
     width: 165px !important;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     line-height: 1.5em !important;
 }
 
@@ -113,13 +113,11 @@
 }
 
 .ps-fade-in-animation {
-    -webkit-transition: linear all 0.5s;
     -moz-transition: linear all 0.5s;
-    -ms-transition: linear all 0.5s;
     -o-transition: linear all 0.5s;
+    -webkit-transition: linear all 0.5s;
     transition: linear all 0.5s;
 }
-
 .ps-fade-in-animation.ng-hide {
     opacity: 0;
 }
